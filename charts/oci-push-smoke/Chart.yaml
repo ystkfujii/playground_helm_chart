@@ -1,0 +1,8 @@
+apiVersion: v2
+name: oci-push-smoke
+description: Smoke test chart for Helm OCI push to GHCR
+type: application
+version: 0.0.0-placeholder
+appVersion: "0.0.0-placeholder"
+annotations:
+  org.opencontainers.image.source: SOURCE_REPOSITORY_PLACEHOLDER
