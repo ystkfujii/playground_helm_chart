@@ -3,7 +3,7 @@ name: Release
 on:
   push:
     tags:
-      - 'v*'
+      - 'oci-push-smoke-chart-v*'
 
 jobs:
   chart-release:

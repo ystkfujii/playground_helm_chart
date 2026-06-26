@@ -1,10 +1,33 @@
 {
-  "include-component-in-tag": false,
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "include-component-in-tag": true,
   "packages": {
+    "apps/oci-push-smoke": {
+      "release-type": "go",
+      "package-name": "oci-push-smoke",
+      "component": "oci-push-smoke-app"
+    },
     "charts/oci-push-smoke": {
       "release-type": "helm",
       "package-name": "oci-push-smoke",
-      "component": "oci-push-smoke"
+      "component": "oci-push-smoke-chart",
+      "extra-files": [
+        {
+          "type": "yaml",
+          "path": "values.yaml",
+          "jsonpath": "$.image.tag"
+        }
+      ]
     }
-  }
+  },
+  "plugins": [
+    {
+      "type": "linked-versions",
+      "groupName": "oci-push-smoke",
+      "components": [
+        "oci-push-smoke-app",
+        "oci-push-smoke-chart"
+      ]
+    }
+  ]
 }

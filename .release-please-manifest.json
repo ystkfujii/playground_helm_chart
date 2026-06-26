@@ -1,3 +1,4 @@
 {
+  "apps/oci-push-smoke": "0.2.0",
   "charts/oci-push-smoke": "0.2.0"
 }
