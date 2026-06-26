@@ -1,19 +1,10 @@
 {
   "include-component-in-tag": false,
   "packages": {
-    ".": {
-      "release-type": "go",
+    "charts/oci-push-smoke": {
+      "release-type": "helm",
       "package-name": "oci-push-smoke",
-      "extra-files": [
-        {
-          "type": "generic",
-          "path": "charts/oci-push-smoke/Chart.yaml"
-        },
-        {
-          "type": "generic",
-          "path": "charts/oci-push-smoke/values.yaml"
-        }
-      ]
+      "component": "oci-push-smoke"
     }
   }
 }
