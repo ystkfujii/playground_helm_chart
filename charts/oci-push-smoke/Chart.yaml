@@ -2,7 +2,7 @@ apiVersion: v2
 name: oci-push-smoke
 description: Smoke test chart for Helm OCI push to GHCR
 type: application
-version: 0.2.0
+version: 0.3.0
 appVersion: 0.1.0
 annotations:
   org.opencontainers.image.source: https://github.com/ystkfujii/playground_helm_chart

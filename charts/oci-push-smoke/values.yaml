@@ -1,17 +1,12 @@
 replicaCount: 1
-
 image:
   repository: ghcr.io/ystkfujii/oci-push-smoke
-  tag: "0.2.0"
+  tag: 0.3.0
   pullPolicy: IfNotPresent
-
-message: "hello from helm chart"
-
+message: hello from helm chart
 service:
   type: ClusterIP
   port: 80
-
 podAnnotations: {}
 podLabels: {}
-
 resources: {}
